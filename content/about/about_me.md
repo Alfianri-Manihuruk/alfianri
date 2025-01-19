@@ -6,7 +6,7 @@ draft: false
 tags: ["ML", "AI", "Python", "SQL", "Data Compression"]
 weight: 106
 cover:
-    image: "/blog/face-dataset-compression/cover.jpg"
+    image: "/about/images/foto_about.jpg"
     caption: "Alfianri Manihuruk"
 ---
 
