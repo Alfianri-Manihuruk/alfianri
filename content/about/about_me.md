@@ -15,7 +15,7 @@ I am a passionate professional in the field of Data Science, focusing on roles s
 With expertise in Python, SQL, data visualization, and cutting-edge technologies such as cloud computing and big data processing, I continuously enhance my skills through personal projects and by staying updated on the latest tech trends. My goal is to contribute to data-driven strategic decision-making in innovative companies.
 
 # Experience
-For ease and accuracy of information, my entire professional experience is available on LinkedIn. Please visit the following link to view my complete and always up-to-date profile [LinkedIn.](https://www.linkedin.com/in/Alfianri-Manihuruk)
+For ease and accuracy of information, my entire professional experience is available on LinkedIn. Please visit the following link to view my complete and always up-to-date profile **[LinkedIn.](https://www.linkedin.com/in/Alfianri-Manihuruk)**
 
 
 
