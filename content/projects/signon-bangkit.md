@@ -6,8 +6,8 @@ tags      : ["Google Colab", "Python", "Docker", "Tensorflow", "NodeJs    Servis
 showToc   : true
 weight    : 202
 cover     :
-    image: "/projects/signon-bangkit/UI_UX.png"
-
+    image: "projects/signon-bangkit/UI_UX.png"
+    
 
 --- 
 ### Link
