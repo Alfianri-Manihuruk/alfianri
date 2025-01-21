@@ -4,7 +4,7 @@ draft: false
 tags: ["Computer Vision", "AI/ML", "Statistics", "Data Analysis", "Predictive Analytics", "Data Mining", "Big Data"]
 weight: 106
 cover:
-    image: "about/images/about.jpg"
+    image: "about/images/about1.jpg"
     caption: "Alfianri Manihuruk"
 ---
 
