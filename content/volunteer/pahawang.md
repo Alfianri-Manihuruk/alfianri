@@ -8,7 +8,7 @@ tags: ["Public Relationship", "Leaderships"]
 showToc: false
 weight: 209
 cover:
-    image: "volunteer/pahawang/pantai3.jpg"
+    image: "volunteer/pahawang/pantai3.JPG"
 --- 
 
 ## Description
@@ -21,7 +21,7 @@ Setiap hari, gelombang dan arus laut mengikis tanah di sepanjang garis pantai Pu
 
 Terinspirasi oleh fenomena ini, Sobat Bumi Indonesia Regional Lampung menggelar kegiatan pertahanan bertajuk "Tanam Harapan untuk Nusantara Baru: Aksi Kolaboratif Sobi Lampung Bersama USI Tanam 500 Bibit Mangrove di Pulau Pahawang". Pada aksi ini, Sobat Bumi Indonesia Regional Lampung dan Unit Selam ITERA melakukan penanaman bibit mangrove bersama masyarakat sekitar di Pulau Pahawang. Sebanyak 1000 bibit mangrove disiapkan dan ditanam di titik-titik lokasi yang telah ditentukan. 
 
-![Tanam Pohon](https://alfianri-manihuruk.github.io/alfianri/volunteer/pahawang/pantai4.jpg)
+![Tanam Pohon](https://alfianri-manihuruk.github.io/alfianri/volunteer/pahawang/pantai4.JPG)
 ![Tanam Pohon](https://alfianri-manihuruk.github.io/alfianri/volunteer/pahawang/pantai2.jpg)
 
 
@@ -34,7 +34,7 @@ Setelah semua bibit tertanam, kegiatan ditutup dengan sesi refleksi dan diskusi 
 
 Sebelum pulang, Sobat Bumi Indonesia Regional Lampung dan Unit Selam ITERA meluangkan waktu untuk makan malam bersama, berdiskusi dan bertukar gagasan mengenai kelestarian alam. Di tengah keramaian, suara kami bergema, berbaur dengan angin samudera, membawa harapan ke pelosok pulau. Setiap langkah adalah doa, setiap teriakan adalah harapan, dan setiap senyum adalah penjaga. Tetaplah kuat.
 
-![Tanam Pohon](https://alfianri-manihuruk.github.io/alfianri/volunteer/pahawang/pantai1.jpg)
+![Tanam Pohon](https://alfianri-manihuruk.github.io/alfianri/volunteer/pahawang/pantai1.JPG)
 
 
 
