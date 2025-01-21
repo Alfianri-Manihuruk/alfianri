@@ -26,5 +26,5 @@ Proyek ini bertujuan untuk menciptakan sebuah dashboard interaktif menggunakan J
 ### Hasil
 Berikut ini ditampilkan hasil beberapa dasboard
 
-![Dasboard Student](/projects/viaroom/result_2.png)
+![Dasboard Student](https://alfianri-manihuruk.github.io/alfianri/projects/viaroom/result_2.png)
 
