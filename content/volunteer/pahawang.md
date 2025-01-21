@@ -8,7 +8,7 @@ tags: ["Public Relationship", "Leaderships"]
 showToc: false
 weight: 209
 cover:
-    image: "volunteer/sebart-pro/sosialisasi_pertamina.jpg"
+    image: "volunteer/pahawang/pantai3.JPG"
 --- 
 
 ## Description
@@ -19,7 +19,12 @@ Di tepi pantai, deburan ombak melukis keindahan di atas butiran kuarsa, mencipta
 
 Setiap hari, gelombang dan arus laut mengikis tanah di sepanjang garis pantai Pulau Pahawang. Perlahan namun pasti, kemunduran garis pantai terus berlanjut, mengancam perumahan dan pusat kehidupan. Sedimen hasil abrasi juga merusak ekosistem laut di dekat pantai. Semua ini mengancam kehidupan masyarakat dan makhluk hidup lainnya di daerah pesisir.
 
-Terinspirasi oleh fenomena ini, Sobat Bumi Indonesia Regional Lampung menggelar kegiatan pertahanan bertajuk "Tanam Harapan untuk Nusantara Baru: Aksi Kolaboratif Sobi Lampung Bersama USI Tanam 500 Bibit Mangrove di Pulau Pahawang". Pada aksi ini, Sobat Bumi Indonesia Regional Lampung dan Unit Selam ITERA melakukan penanaman bibit mangrove bersama masyarakat sekitar di Pulau Pahawang. Sebanyak 1000 bibit mangrove disiapkan dan ditanam di titik-titik lokasi yang telah ditentukan.
+Terinspirasi oleh fenomena ini, Sobat Bumi Indonesia Regional Lampung menggelar kegiatan pertahanan bertajuk "Tanam Harapan untuk Nusantara Baru: Aksi Kolaboratif Sobi Lampung Bersama USI Tanam 500 Bibit Mangrove di Pulau Pahawang". Pada aksi ini, Sobat Bumi Indonesia Regional Lampung dan Unit Selam ITERA melakukan penanaman bibit mangrove bersama masyarakat sekitar di Pulau Pahawang. Sebanyak 1000 bibit mangrove disiapkan dan ditanam di titik-titik lokasi yang telah ditentukan. 
+
+<!-- ![Tanam Pohon](https://alfianri-manihuruk.github.io/alfianri/volunteer/pahawang/pantai4.JPG)
+![Tanam Pohon](https://alfianri-manihuruk.github.io/alfianri/volunteer/pahawang/pantai2.jpg) -->
+
+
 
 Kegiatan ini adalah investasi Sobat Bumi Indonesia Regional Lampung dalam menjaga garis pantai Pulau Pahawang. Harapannya, bibit-bibit mangrove dapat tumbuh menjadi mangrove dewasa yang kokoh. Sebaran akar, batang, ranting, dan daun mangrove dewasa diharapkan mencegah abrasi pantai dari gelombang dan arus laut. Sebelum penanaman, Sobat Bumi Indonesia Regional Lampung dan Unit Selam ITERA memberikan penjelasan singkat mengenai teknik menanam mangrove yang benar kepada masyarakat. Aksi ini disambut antusias oleh orang dewasa, pemuda, serta anak-anak yang ikut membantu menanam bibit mangrove. Kegiatan penanaman bibit dimulai pada pukul 13.00 WIB dan berakhir pada pukul 16.00 WIB.
 
@@ -29,8 +34,7 @@ Setelah semua bibit tertanam, kegiatan ditutup dengan sesi refleksi dan diskusi 
 
 Sebelum pulang, Sobat Bumi Indonesia Regional Lampung dan Unit Selam ITERA meluangkan waktu untuk makan malam bersama, berdiskusi dan bertukar gagasan mengenai kelestarian alam. Di tengah keramaian, suara kami bergema, berbaur dengan angin samudera, membawa harapan ke pelosok pulau. Setiap langkah adalah doa, setiap teriakan adalah harapan, dan setiap senyum adalah penjaga. Tetaplah kuat.
 
-## Dokumentasi
-![Tanam Pohon](https://alfianri-manihuruk.github.io/alfianri/volunteer/pahawang/pantai.jpg)
+![Tanam Pohon](https://alfianri-manihuruk.github.io/alfianri/volunteer/pahawang/pantai1.JPG)
 
 
 
