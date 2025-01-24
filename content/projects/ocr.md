@@ -3,14 +3,15 @@ title: "Detect Image Information Into Documents With OCR (Optical Character Reco
 description: "Smart OCR for Document Analysis"
 dateString: Sep 2024
 draft: false
-tags: ["DL", "AI", "Python", "PyTorch", "PyTorch","Computer Vision"]
+tags: ["DL", "AI", "Python", "PyTorch", "OCR","Computer Vision"]
 showToc: false
-weight: 206
+weight: 204
 cover:
     image: "projects/ocr/cover.png"
 --- 
 
-## 🔗 [Github](https://github.com/Alfianri-Manihuruk/ImageToDocumentOCR)
+## Link
+- 🔗 [**Github**](https://github.com/Alfianri-Manihuruk/ImageToDocumentOCR)
 
 ## Summary
 

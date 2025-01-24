@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>JavaScript on Alfianri Manihuruk</title>
+    <link>http://localhost:1313/alfianri/tags/javascript/</link>
+    <description>Recent content in JavaScript on Alfianri Manihuruk</description>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/alfianri/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Student Performance Dashboard</title>
+      <link>http://localhost:1313/alfianri/projects/viaroom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/alfianri/projects/viaroom/</guid>
+      <description>&lt;h3 id=&#34;link&#34;&gt;Link&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;🔗 &lt;a href=&#34;https://github.com/Alfianri-Manihuruk/Viaroom&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔗 &lt;a href=&#34;https://lookerstudio.google.com/reporting/469440fd-e823-436d-bfa6-1a488498a133&#34;&gt;Looker Studio&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;p&gt;Proyek ini bertujuan untuk menciptakan sebuah dashboard interaktif menggunakan JavaScript dan HTML. Dashboard ini akan menyajikan berbagai informasi penting dan visualisasi data terkait dengan progres latihan tryout siswa dan kinerja sekolah secara keseluruhan.&lt;/p&gt;
+&lt;h3 id=&#34;fitur&#34;&gt;Fitur&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Tampilan data statistik&lt;/li&gt;
+&lt;li&gt;Grafik Progres&lt;/li&gt;
+&lt;li&gt;Form input pengguna&lt;/li&gt;
+&lt;li&gt;Rekomendasi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hasil&#34;&gt;Hasil&lt;/h3&gt;
+&lt;p&gt;Berikut ini ditampilkan hasil beberapa dasboard&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Dasboard Student&#34; loading=&#34;lazy&#34; src=&#34;https://alfianri-manihuruk.github.io/alfianri/projects/viaroom/result_2.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Todo List App</title>
+      <link>http://localhost:1313/alfianri/projects/todo-list-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/alfianri/projects/todo-list-app/</guid>
+      <description>A Todo list web application built using React</description>
+    </item>
+  </channel>
+</rss>

@@ -9,8 +9,11 @@ weight: 202
 cover:
     image: "projects/deteksi_kantuk/hasil_prediksi.png"
 --- 
-## 🔗 [Github](https://github.com/Alfianri-Manihuruk/TA)
-##  [Dokumen](https://repo.itera.ac.id/depan/submission/SB2406060109)
+
+## Link
+- [**🔗Github**](https://github.com/Alfianri-Manihuruk/TA)
+
+- [**🔗Dokumen**](https://repo.itera.ac.id/depan/submission/SB2406060109)
 
 
 ## Abstrak

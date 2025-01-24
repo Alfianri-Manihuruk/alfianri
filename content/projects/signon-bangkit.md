@@ -4,14 +4,14 @@ dateString: Feb 2023 - Jul 2023
 draft     : false
 tags      : ["Google Colab", "Python", "Docker", "Tensorflow", "NodeJs    Servis", "Google Cloud Services", "Figma", "Android Studio"]
 showToc   : true
-weight    : 202
+weight    : 204
 cover     :
     image: "projects/signon-bangkit/UI_UX.png"
     
 
 --- 
 ### Link
-- 🔗 [GitHub](https://github.com/Alfianri-Manihuruk/BangkitCapstoneSingOn)
+- 🔗 [**GitHub**](https://github.com/Alfianri-Manihuruk/BangkitCapstoneSingOn)
 
 ### Description
 SignOn is an android application that educates knowledge of sign language to community and helps ordinary people to commincate with deaf. This repository contains of machine learning model processing code and back end application of SignOn.
