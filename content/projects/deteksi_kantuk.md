@@ -43,26 +43,24 @@ Data yang dimanfaatkan dalam penelitian ini termasuk dalam kategori data sekunde
 
 ## Flowchart
 
-![Flowchart](https://alfianri-manihuruk.github.io/alfianri/projects/deteksi_kantuk/fowchart.png)
-
+![Flowchart](ttps://alfianri-manihuruk.github.io/alfianri/projects/deteksi_kantuk/fowchart.png)
 
 ## Hasil
 Dapat dilihat akurasi dan loss stabil di semua fold, semakin tinggi nilai epoch akurasi semakin meningkat dan akurasi di atas 90%. Begitu juga dengan nilai loss semakin tinggi epoch semakin mengecil nilai loss yang dihasilkan dan mendekati nilai nol. Hal ini menunjukkan bahwa model mampu belajar dari data dan tidak
 hanya menghafal data pelatihan. Ini berarti model memiliki kinerja baik pada data baru yang tidak dilihat saat pelatihan.
 
-![Flowchart](https://alfianri-manihuruk.github.io/alfianri/projects/deteksi_kantuk/akurasi_plotfix.png)
+![Akurasi & Loss](https://alfianri-manihuruk.github.io/alfianri/projects/deteksi_kantuk/akurasi_plotfix.png)
+
+
 
 
 Begitu juga untuk nilai sepeti akurasi, precison, recall dan f1-score rata-rata diatas angka 90%, seperti di
 tunjukkan pada gambar dibawah ini.
-![Flowchart](https://alfianri-manihuruk.github.io/alfianri/projects/deteksi_kantuk/peforma_cv2.png)
-
-
-
+![Performa](https://alfianri-manihuruk.github.io/alfianri/projects/deteksi_kantuk/peforma_cv2.png)
 
 ## Evaluasi
 Dapat dilihat dari hasil evaluasi menggunakan confusion matrix. Nilai akurasi dan
 metriks yang dihasilkan tidak berbeda jauh dengan pengujian yang dilakukan sebelumnya.
-![Flowchart](https://alfianri-manihuruk.github.io/alfianri/projects/deteksi_kantuk/confusion_matrix.png)
+![Confusion Matriks](https://alfianri-manihuruk.github.io/alfianri/projects/deteksi_kantuk/confusion_matrix.png)
 
 
