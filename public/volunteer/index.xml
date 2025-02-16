@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Volunteers on Alfianri Manihuruk</title>
+    <link>http://localhost:1313/alfianri/volunteer/</link>
+    <description>Recent content in Volunteers on Alfianri Manihuruk</description>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/alfianri/volunteer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unlimited Opportunities with Pertamina Scholarship</title>
+      <link>http://localhost:1313/alfianri/volunteer/sosialisasipf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/alfianri/volunteer/sosialisasipf/</guid>
+      <description>Sosialisasi Beasiswa Pertamina</description>
+    </item>
+    <item>
+      <title>TANAM HARAPAN UNTUK NUSANTARA BARU</title>
+      <link>http://localhost:1313/alfianri/volunteer/pahawang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/alfianri/volunteer/pahawang/</guid>
+      <description>Aksi Kolaboratif Sobi Lampung Bersama USI Tanam 1000 Bibit Mangrove di Pulau Pahawang</description>
+    </item>
+    <item>
+      <title>Assistant Pelatihan Visualisasi Data Sumber Daya Alam Menggunakan Google Data Studio</title>
+      <link>http://localhost:1313/alfianri/volunteer/workshop-gds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/alfianri/volunteer/workshop-gds/</guid>
+      <description>Sains Data Itera Berikan Pelatihan Visualisasi Data Sumber Daya Alam Menggunakan Google Data Studio</description>
+    </item>
+    <item>
+      <title>Assistant PKM Web App Counseling SMA 2 Bandar Lampung</title>
+      <link>http://localhost:1313/alfianri/volunteer/pkm_sma_ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/alfianri/volunteer/pkm_sma_ai/</guid>
+      <description>Inovasi Besar di Era Industri 4.0 dan Pandemi: Penerapan Aplikasi Konseling di SMA Negeri 2 Bandar Lampung oleh Tim Sains Data ITERA</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Google Data Studio on Alfianri Manihuruk</title>
+    <link>http://localhost:1313/alfianri/tags/google-data-studio/</link>
+    <description>Recent content in Google Data Studio on Alfianri Manihuruk</description>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/alfianri/tags/google-data-studio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assistant Pelatihan Visualisasi Data Sumber Daya Alam Menggunakan Google Data Studio</title>
+      <link>http://localhost:1313/alfianri/volunteer/workshop-gds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/alfianri/volunteer/workshop-gds/</guid>
+      <description>Sains Data Itera Berikan Pelatihan Visualisasi Data Sumber Daya Alam Menggunakan Google Data Studio</description>
+    </item>
+  </channel>
+</rss>

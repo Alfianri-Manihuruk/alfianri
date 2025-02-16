@@ -10,7 +10,7 @@ cover:
     image: "volunteer/pkm_sma_ai/pic1.JPG"
 --- 
 
-## Description
+### Description
 
 Tim dosen dan mahasiswa Program Studi Sains Data Jurusan Sains Institut Teknologi Sumatera (ITERA) melakukan sosialisasi Penerapan Aplikasi Konseling di SMA Negeri 2 Bandar Lampung dalam menghadapi Era Industri 4.0 dan Pandemi Covid-19 pada tanggal 15 November 2022. Kegiatan tersebut merupakan bagian dari program Pengabdian kepada Masyarakat (PkM), selain bertujuan untuk melaksanakan tridarma perguruan tinggi yang dilaksanakan oleh dosen dan mahasiswa juga membantu pihak SMA Negeri 2 Bandar Lampung dalam memberikan fasilitas layanan pendukung konseling akademik dengan menerapkan aplikasi berbasis website.
 

@@ -10,14 +10,14 @@ cover:
     image: "projects/ocr/cover.png"
 --- 
 
-## Link
+### Link
 - 🔗 [**Github**](https://github.com/Alfianri-Manihuruk/ImageToDocumentOCR)
 
-## Summary
+### Summary
 
 This project aims to enable computers to read text from images or scanned documents. OCR (Optical Character Recognition) serves as a bridge connecting the physical world (printed documents) with the digital world.
 
-## Work Plan
+### Work Plan
 - Environment Setup: Prepare the tools and conduct research related to OCR.
 - Data Collection: Gather a dataset of images containing text.
 - Data Preprocessing: Apply sharpening techniques and contrast adjustment to the images.
@@ -25,7 +25,7 @@ This project aims to enable computers to read text from images or scanned docume
 - Column Segmentation: Add logic to divide the text by columns and test the results.
 - Evaluation and Testing: Compare the OCR results with the original text and conduct iterative testing for improvements.
 
-## Tools and Technologies
+### Tools and Technologies
 This OCR project leverages various tools and technologies to ensure high accuracy and efficiency in text extraction. 
 Below are the main tools and libraries used:
 
@@ -39,7 +39,7 @@ Below are the main tools and libraries used:
 - **Jupyter Notebook**: An interactive environment for writing and running code, used for experimentation and visualization.
 
 
-## Evaluation and Challenge
+### Evaluation and Challenge
 - Easy OCR 
 1. Cannot detect special characters
 2. OCR output format and structure are poor.

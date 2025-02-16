@@ -10,13 +10,13 @@ cover:
     image: "projects/deteksi_kantuk/hasil_prediksi.png"
 --- 
 
-## Link
+### Link
 - [**🔗Github**](https://github.com/Alfianri-Manihuruk/TA)
 
 - [**🔗Dokumen**](https://repo.itera.ac.id/depan/submission/SB2406060109)
 
 
-## Abstrak
+### Abstrak
 Kecelakaan lalu lintas yang diakibatkan oleh kelalaian manusia, seperti mengantuk
 saat mengemudi, menjadi masalah serius. Karena peristiwa ini melibatkan kendaraan lain atau pengemudi lain di jalan raya. Kelalaian manusia seperti kantuk dapat
 menyebabkan kecelakaan yang merugikan secara materi dan non materi. Banyak
@@ -28,7 +28,7 @@ tinggi. Pada penelitian ini didapatkan hasil terbaik yaitu dengan penggunaan par
 performansi model untuk akurasi, precision, recall, dan F1-Score masing-masing
 sebesar 91.76%, 91.76%, 92.94%, dan 91.62%.
 
-## Tools
+### Tools
 Penelitian ini memanfaatkan perangkat lunak berikut:
 - Windows 11 x64
 - Python 3.11.4
@@ -38,14 +38,14 @@ Penelitian ini memanfaatkan perangkat lunak berikut:
 - Open CV 4.8.1
 - Google Colaboratory
 
-## Data
+### Data
 Data yang dimanfaatkan dalam penelitian ini termasuk dalam kategori data sekunder dengan format video (avi). Sumber data ini berasal dari **YAWDD: YAWNING DETECTION DATASET**
 
-## Flowchart
+### Flowchart
 
 ![Flowchart](ttps://alfianri-manihuruk.github.io/alfianri/projects/deteksi_kantuk/fowchart.png)
 
-## Hasil
+### Hasil
 Dapat dilihat akurasi dan loss stabil di semua fold, semakin tinggi nilai epoch akurasi semakin meningkat dan akurasi di atas 90%. Begitu juga dengan nilai loss semakin tinggi epoch semakin mengecil nilai loss yang dihasilkan dan mendekati nilai nol. Hal ini menunjukkan bahwa model mampu belajar dari data dan tidak
 hanya menghafal data pelatihan. Ini berarti model memiliki kinerja baik pada data baru yang tidak dilihat saat pelatihan.
 

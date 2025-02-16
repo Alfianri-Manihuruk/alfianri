@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/alfianri/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=alfianri/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Analisis Data Karyawan: Demografi, Metrik Pekerjaan, dan Indikator Keluar Kerja | Alfianri Manihuruk</title>
+<meta name="keywords" content="Pyhton, Jupyter Notebook">
+<meta name="description" content="Link
+
+🔗 Github
+
+Latar Belakang
+Analisis ini bertujuan untuk mengeksplorasi dataset karyawan yang mencakup atribut demografis, metrik terkait pekerjaan, dan status attrition. Fokus utamanya adalah melakukan Exploratory Data Analysis (EDA) untuk memahami karakteristik data, mengidentifikasi pola, serta menemukan insight yang relevan.
+
+Langkah-Langkah Analisis
+
+
+Import Data dan Library
+
+Dataset diambil dari Google Drive menggunakan Pandas.
+Library yang digunakan: NumPy, Pandas, Matplotlib, dan Seaborn untuk    visualisasi.
+
+
+
+Pembersihan Data
+Kolom yang tidak relevan dihapus: EmployeeNumber, Over18, dan StandardHours.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/alfianri/projects/analisis_karyawan/">
+<link crossorigin="anonymous" href="/alfianri/assets/css/stylesheet.6d429cc018ac42d438822ed961dcc93cac468c68ba2618facdceecef662cdaea.css" integrity="sha256-bUKcwBisQtQ4gi7ZYdzJPKxGjGi6Jhj6zc7s72Ys2uo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/alfianri/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/alfianri/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/alfianri/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/alfianri/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/alfianri/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/alfianri/projects/analisis_karyawan/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/alfianri/projects/analisis_karyawan/">
+  <meta property="og:site_name" content="Alfianri Manihuruk">
+  <meta property="og:title" content="Analisis Data Karyawan: Demografi, Metrik Pekerjaan, dan Indikator Keluar Kerja">
+  <meta property="og:description" content="Link 🔗 Github Latar Belakang Analisis ini bertujuan untuk mengeksplorasi dataset karyawan yang mencakup atribut demografis, metrik terkait pekerjaan, dan status attrition. Fokus utamanya adalah melakukan Exploratory Data Analysis (EDA) untuk memahami karakteristik data, mengidentifikasi pola, serta menemukan insight yang relevan. Langkah-Langkah Analisis Import Data dan Library
+Dataset diambil dari Google Drive menggunakan Pandas. Library yang digunakan: NumPy, Pandas, Matplotlib, dan Seaborn untuk visualisasi. Pembersihan Data
+Kolom yang tidak relevan dihapus: EmployeeNumber, Over18, dan StandardHours.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:tag" content="Pyhton">
+    <meta property="article:tag" content="Jupyter Notebook">
+    <meta property="og:image" content="http://localhost:1313/alfianri/projects/analisis_karyawan/data_karyawan.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/alfianri/projects/analisis_karyawan/data_karyawan.png">
+<meta name="twitter:title" content="Analisis Data Karyawan: Demografi, Metrik Pekerjaan, dan Indikator Keluar Kerja">
+<meta name="twitter:description" content="Link
+
+🔗 Github
+
+Latar Belakang
+Analisis ini bertujuan untuk mengeksplorasi dataset karyawan yang mencakup atribut demografis, metrik terkait pekerjaan, dan status attrition. Fokus utamanya adalah melakukan Exploratory Data Analysis (EDA) untuk memahami karakteristik data, mengidentifikasi pola, serta menemukan insight yang relevan.
+
+Langkah-Langkah Analisis
+
+
+Import Data dan Library
+
+Dataset diambil dari Google Drive menggunakan Pandas.
+Library yang digunakan: NumPy, Pandas, Matplotlib, dan Seaborn untuk    visualisasi.
+
+
+
+Pembersihan Data
+Kolom yang tidak relevan dihapus: EmployeeNumber, Over18, dan StandardHours.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Projects",
+      "item": "http://localhost:1313/alfianri/projects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Analisis Data Karyawan: Demografi, Metrik Pekerjaan, dan Indikator Keluar Kerja",
+      "item": "http://localhost:1313/alfianri/projects/analisis_karyawan/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Analisis Data Karyawan: Demografi, Metrik Pekerjaan, dan Indikator Keluar Kerja",
+  "name": "Analisis Data Karyawan: Demografi, Metrik Pekerjaan, dan Indikator Keluar Kerja",
+  "description": "Link 🔗 Github Latar Belakang Analisis ini bertujuan untuk mengeksplorasi dataset karyawan yang mencakup atribut demografis, metrik terkait pekerjaan, dan status attrition. Fokus utamanya adalah melakukan Exploratory Data Analysis (EDA) untuk memahami karakteristik data, mengidentifikasi pola, serta menemukan insight yang relevan. Langkah-Langkah Analisis Import Data dan Library\nDataset diambil dari Google Drive menggunakan Pandas. Library yang digunakan: NumPy, Pandas, Matplotlib, dan Seaborn untuk visualisasi. Pembersihan Data\nKolom yang tidak relevan dihapus: EmployeeNumber, Over18, dan StandardHours.\n",
+  "keywords": [
+    "Pyhton", "Jupyter Notebook"
+  ],
+  "articleBody": "Link 🔗 Github Latar Belakang Analisis ini bertujuan untuk mengeksplorasi dataset karyawan yang mencakup atribut demografis, metrik terkait pekerjaan, dan status attrition. Fokus utamanya adalah melakukan Exploratory Data Analysis (EDA) untuk memahami karakteristik data, mengidentifikasi pola, serta menemukan insight yang relevan. Langkah-Langkah Analisis Import Data dan Library\nDataset diambil dari Google Drive menggunakan Pandas. Library yang digunakan: NumPy, Pandas, Matplotlib, dan Seaborn untuk visualisasi. Pembersihan Data\nKolom yang tidak relevan dihapus: EmployeeNumber, Over18, dan StandardHours.\nEmployeeNumber: Hanya identifier unik.\nOver18: Semua karyawan sudah di atas 18 tahun.\nStandardHours: Nilainya konstan untuk semua karyawan.\nEDA Univariat untuk Kolom Numerik\nVisualisasi: Histogram dan boxplot untuk setiap kolom numerik.\nStatistik Deskriptif: Mean, standar deviasi, min, kuartil (Q1, Q2, Q3), dan max.\nIdentifikasi Outlier:\nMenghitung Interquartile Range (IQR).\nMenentukan batas upper whisker (Q3 + 1.5×IQR) dan lower whisker (Q1 – 1.5×IQR).\nOutlier didefinisikan sebagai nilai di luar batas tersebut.\nKesimpulan Dataset karyawan ini relatif bersih dengan sedikit noise (tidak ada outlier).\nUsia karyawan terdistribusi normal, menunjukkan keberagaman generasi dalam perusahaan.\nPenghapusan kolom yang tidak relevan membantu memfokuskan analisis pada fitur yang lebih informatif.\nAnalisis ini menjadi dasar untuk eksplorasi lebih lanjut, seperti memprediksi attrition atau mengidentifikasi faktor yang memengaruhi kepuasan kerja karyawan. Untuk lebih hasil analisis lebih lengkap silahkan kunjungi link github di atas.\n",
+  "wordCount" : "210",
+  "inLanguage": "en",
+  "image":"http://localhost:1313/alfianri/projects/analisis_karyawan/data_karyawan.png","datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/alfianri/projects/analisis_karyawan/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alfianri Manihuruk",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/alfianri/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header sticky-header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/alfianri/" accesskey="h" title="Alfianri Manihuruk (Alt + H)">Alfianri Manihuruk</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/alfianri/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/alfianri/about" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/alfianri/projects" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/alfianri/volunteer" title="Volunteer">
+                    <span>Volunteer</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/alfianri/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/alfianri/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/alfianri/projects/">Projects</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Analisis Data Karyawan: Demografi, Metrik Pekerjaan, dan Indikator Keluar Kerja
+    </h1>
+    <div class="post-meta">
+
+
+Des 2024
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="eager" src="http://localhost:1313/alfianri/projects/analisis_karyawan/data_karyawan.png" alt="">
+        
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">‎ Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#link" aria-label="Link">Link</a></li>
+                <li>
+                    <a href="#latar-belakang" aria-label="Latar Belakang">Latar Belakang</a></li>
+                <li>
+                    <a href="#langkah-langkah-analisis" aria-label="Langkah-Langkah Analisis">Langkah-Langkah Analisis</a></li>
+                <li>
+                    <a href="#kesimpulan" aria-label="Kesimpulan">Kesimpulan</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h3 id="link">Link<a hidden class="anchor" aria-hidden="true" href="#link">#</a></h3>
+<ul>
+<li>🔗 <a href="https://github.com/Alfianri-Manihuruk/Analisis-Data-Karyawan/blob/main/analisis_karyawan.ipynb">Github</a></li>
+</ul>
+<h3 id="latar-belakang">Latar Belakang<a hidden class="anchor" aria-hidden="true" href="#latar-belakang">#</a></h3>
+<pre><code>Analisis ini bertujuan untuk mengeksplorasi dataset karyawan yang mencakup atribut demografis, metrik terkait pekerjaan, dan status attrition. Fokus utamanya adalah melakukan Exploratory Data Analysis (EDA) untuk memahami karakteristik data, mengidentifikasi pola, serta menemukan insight yang relevan.
+</code></pre>
+<h3 id="langkah-langkah-analisis">Langkah-Langkah Analisis<a hidden class="anchor" aria-hidden="true" href="#langkah-langkah-analisis">#</a></h3>
+<ol>
+<li>
+<p>Import Data dan Library</p>
+<ul>
+<li>Dataset diambil dari Google Drive menggunakan Pandas.</li>
+<li>Library yang digunakan: NumPy, Pandas, Matplotlib, dan Seaborn untuk    visualisasi.</li>
+</ul>
+</li>
+<li>
+<p>Pembersihan Data</p>
+<p>Kolom yang tidak relevan dihapus: EmployeeNumber, Over18, dan StandardHours.</p>
+<ul>
+<li>
+<p>EmployeeNumber: Hanya identifier unik.</p>
+</li>
+<li>
+<p>Over18: Semua karyawan sudah di atas 18 tahun.</p>
+</li>
+<li>
+<p>StandardHours: Nilainya konstan untuk semua karyawan.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>EDA Univariat untuk Kolom Numerik</p>
+<ul>
+<li>
+<p>Visualisasi: Histogram dan boxplot untuk setiap kolom numerik.</p>
+</li>
+<li>
+<p>Statistik Deskriptif: Mean, standar deviasi, min, kuartil (Q1, Q2, Q3), dan max.</p>
+</li>
+<li>
+<p>Identifikasi Outlier:</p>
+<ol>
+<li>
+<p>Menghitung Interquartile Range (IQR).</p>
+</li>
+<li>
+<p>Menentukan batas upper whisker (Q3 + 1.5×IQR) dan lower whisker (Q1 – 1.5×IQR).</p>
+</li>
+<li>
+<p>Outlier didefinisikan sebagai nilai di luar batas tersebut.</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="kesimpulan">Kesimpulan<a hidden class="anchor" aria-hidden="true" href="#kesimpulan">#</a></h3>
+<ul>
+<li>
+<p>Dataset karyawan ini relatif bersih dengan sedikit noise (tidak ada outlier).</p>
+</li>
+<li>
+<p>Usia karyawan terdistribusi normal, menunjukkan keberagaman generasi dalam perusahaan.</p>
+</li>
+<li>
+<p>Penghapusan kolom yang tidak relevan membantu memfokuskan analisis pada fitur yang lebih informatif.</p>
+</li>
+</ul>
+<p>Analisis ini menjadi dasar untuk eksplorasi lebih lanjut, seperti memprediksi attrition atau mengidentifikasi faktor yang memengaruhi kepuasan kerja karyawan. Untuk lebih hasil analisis lebih lengkap silahkan kunjungi link github di atas.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/alfianri/tags/pyhton/">Pyhton</a></li>
+      <li><a href="http://localhost:1313/alfianri/tags/jupyter-notebook/">Jupyter Notebook</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="http://localhost:1313/alfianri/">Alfianri Manihuruk</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

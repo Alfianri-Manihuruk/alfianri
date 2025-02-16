@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Data Analysis on Alfianri Manihuruk</title>
+    <link>http://localhost:1313/alfianri/tags/data-analysis/</link>
+    <description>Recent content in Data Analysis on Alfianri Manihuruk</description>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/alfianri/tags/data-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me - Alfianri Manihuruk</title>
+      <link>http://localhost:1313/alfianri/about/about_me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/alfianri/about/about_me/</guid>
+      <description>&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;
+&lt;p&gt;I am a passionate professional in the field of Data Science, focusing on roles such as Data Scientist, Data Analyst, Data Engineer, and AI/ML Engineer. Currently, I am deepening my knowledge in machine learning, artificial intelligence, and business analysis to create data-driven solutions.&lt;/p&gt;
+&lt;p&gt;With expertise in Python, SQL, data visualization, and cutting-edge technologies such as cloud computing and big data processing, I continuously enhance my skills through personal projects and by staying updated on the latest tech trends. My goal is to contribute to data-driven strategic decision-making in innovative companies.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
