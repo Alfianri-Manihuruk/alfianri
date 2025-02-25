@@ -10,7 +10,7 @@ cover:
 --- 
 
 ### Link 
-- 🔗 [Github](https://github.com/Alfianri-Manihuruk/Analisis-Data-Karyawan/blob/main/analisis_karyawan.ipynb)
+- 🔗 [Github](https://github.com/Alfianri-Manihuruk/Analisis-Data-Optimalkan-Biaya-Tingkatkan-Profit-di-Industri-Logistik)
 - 🔗 [Looker Studio](https://lookerstudio.google.com/reporting/462415dd-194d-411c-9a1e-a3d378a9892d)
 
 
