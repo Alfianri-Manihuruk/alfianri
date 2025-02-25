@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/alfianri/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=alfianri/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Analisis Data: Optimalkan Biaya &amp; Tingkatkan Profit di Industri Logistik | Alfianri Manihuruk</title>
+<meta name="keywords" content="Pyhton, Machine Learning, Jupyter Notebook">
+<meta name="description" content="Link
+
+🔗 Github
+🔗 Looker Studio
+
+Latar Belakang
+Di era digital, data menjadi aset tak ternilai bagi perusahaan untuk mengambil keputusan strategis.
+Di industri penerbangan, analisis data tidak hanya membantu meningkatkan pengalaman pelanggan, tetapi
+juga menjadi kunci untuk mengoptimalkan biaya operasional dan memaksimalkan profitabilitas.
+Exploratory Data Analysis (EDA)
+Eksplorasi pada kolom numerik
+
+Distribusi Data
+
+
+Beberapa fitur memiliki distribusi yang tidak normal (skewed), terutama COST_RATIO dan PROFIT, yang cenderung condong ke kanan (positively skewed).
+COLLY dan WEIGHT juga menunjukkan adanya beberapa nilai ekstrem yang mungkin perlu diteliti lebih lanjut (mungkin outlier).
+
+
+Korelasi Antara Variabel
+
+
+TOTAL_COST berkorelasi sangat tinggi dengan COST_A, COST_B, dan COST_C, yang berarti biaya total sangat dipengaruhi oleh biaya individu ini. Hal ini masuk akal karena TOTAL_COST merupakan jumlah dari biaya-biaya tersebut.
+PRICE berkorelasi positif dengan REVENUE dan PROFIT, menunjukkan bahwa semakin tinggi harga tiket, semakin besar potensi pendapatan dan keuntungan maskapai.
+MARGIN berkorelasi negatif dengan COST_RATIO, artinya semakin tinggi rasio biaya terhadap pendapatan, semakin kecil margin keuntungan maskapai. Ini bisa menjadi faktor penting dalam strategi pricing maskapai.
+
+
+Potensi Perbaikan Model &amp; Bisnis
+
+
+Analisis Profitabilitas: Maskapai bisa fokus pada harga tiket yang optimal untuk memaksimalkan profit sambil mempertahankan volume penumpang.
+Efisiensi Biaya: Mengurangi COST_RATIO bisa membantu meningkatkan margin keuntungan, misalnya dengan mengoptimalkan operasional pesawat atau mengurangi biaya bahan bakar.
+Outlier Handling: Jika ada nilai ekstrem pada kolom seperti WEIGHT atau PROFIT, sebaiknya dilakukan analisis lebih lanjut apakah ini kesalahan data atau memang kejadian yang jarang terjadi.
+
+Eksplorasi pada kolom kategorikal
+
+Dominasi Maskapai &amp; Rute Populer
+
+
+Citilink dan Lion Air mendominasi dalam jumlah penerbangan, menunjukkan mereka sebagai pilihan utama.
+Makassar dan Banjarmasin adalah tujuan paling sering dikunjungi, kemungkinan besar karena tingginya mobilitas bisnis atau kebutuhan logistik.
+
+
+Distribusi Layanan
+
+
+Door to Door (DTD) jauh lebih populer dibandingkan Port to Port (PTP).
+Hal ini bisa menunjukkan bahwa pelanggan lebih memilih layanan yang lebih lengkap daripada sekadar pengiriman antar bandara.
+
+
+Keberangkatan dari Kota Besar
+
+
+Jakarta dan Surabaya menjadi pusat keberangkatan utama, yang wajar karena merupakan pusat ekonomi Indonesia.
+">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/alfianri/projects/analisis_penjualan/">
+<link crossorigin="anonymous" href="/alfianri/assets/css/stylesheet.6d429cc018ac42d438822ed961dcc93cac468c68ba2618facdceecef662cdaea.css" integrity="sha256-bUKcwBisQtQ4gi7ZYdzJPKxGjGi6Jhj6zc7s72Ys2uo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/alfianri/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/alfianri/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/alfianri/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/alfianri/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/alfianri/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/alfianri/projects/analisis_penjualan/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/alfianri/projects/analisis_penjualan/">
+  <meta property="og:site_name" content="Alfianri Manihuruk">
+  <meta property="og:title" content="Analisis Data: Optimalkan Biaya & Tingkatkan Profit di Industri Logistik">
+  <meta property="og:description" content="Link 🔗 Github 🔗 Looker Studio Latar Belakang Di era digital, data menjadi aset tak ternilai bagi perusahaan untuk mengambil keputusan strategis. Di industri penerbangan, analisis data tidak hanya membantu meningkatkan pengalaman pelanggan, tetapi juga menjadi kunci untuk mengoptimalkan biaya operasional dan memaksimalkan profitabilitas.
+Exploratory Data Analysis (EDA) Eksplorasi pada kolom numerik Distribusi Data Beberapa fitur memiliki distribusi yang tidak normal (skewed), terutama COST_RATIO dan PROFIT, yang cenderung condong ke kanan (positively skewed). COLLY dan WEIGHT juga menunjukkan adanya beberapa nilai ekstrem yang mungkin perlu diteliti lebih lanjut (mungkin outlier). Korelasi Antara Variabel TOTAL_COST berkorelasi sangat tinggi dengan COST_A, COST_B, dan COST_C, yang berarti biaya total sangat dipengaruhi oleh biaya individu ini. Hal ini masuk akal karena TOTAL_COST merupakan jumlah dari biaya-biaya tersebut. PRICE berkorelasi positif dengan REVENUE dan PROFIT, menunjukkan bahwa semakin tinggi harga tiket, semakin besar potensi pendapatan dan keuntungan maskapai. MARGIN berkorelasi negatif dengan COST_RATIO, artinya semakin tinggi rasio biaya terhadap pendapatan, semakin kecil margin keuntungan maskapai. Ini bisa menjadi faktor penting dalam strategi pricing maskapai. Potensi Perbaikan Model &amp; Bisnis Analisis Profitabilitas: Maskapai bisa fokus pada harga tiket yang optimal untuk memaksimalkan profit sambil mempertahankan volume penumpang. Efisiensi Biaya: Mengurangi COST_RATIO bisa membantu meningkatkan margin keuntungan, misalnya dengan mengoptimalkan operasional pesawat atau mengurangi biaya bahan bakar. Outlier Handling: Jika ada nilai ekstrem pada kolom seperti WEIGHT atau PROFIT, sebaiknya dilakukan analisis lebih lanjut apakah ini kesalahan data atau memang kejadian yang jarang terjadi. Eksplorasi pada kolom kategorikal Dominasi Maskapai &amp; Rute Populer Citilink dan Lion Air mendominasi dalam jumlah penerbangan, menunjukkan mereka sebagai pilihan utama. Makassar dan Banjarmasin adalah tujuan paling sering dikunjungi, kemungkinan besar karena tingginya mobilitas bisnis atau kebutuhan logistik. Distribusi Layanan Door to Door (DTD) jauh lebih populer dibandingkan Port to Port (PTP). Hal ini bisa menunjukkan bahwa pelanggan lebih memilih layanan yang lebih lengkap daripada sekadar pengiriman antar bandara. Keberangkatan dari Kota Besar Jakarta dan Surabaya menjadi pusat keberangkatan utama, yang wajar karena merupakan pusat ekonomi Indonesia. ">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:tag" content="Pyhton">
+    <meta property="article:tag" content="Machine Learning">
+    <meta property="article:tag" content="Jupyter Notebook">
+    <meta property="og:image" content="http://localhost:1313/alfianri/projects/analisis_penjualan/dashboard.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/alfianri/projects/analisis_penjualan/dashboard.png">
+<meta name="twitter:title" content="Analisis Data: Optimalkan Biaya &amp; Tingkatkan Profit di Industri Logistik">
+<meta name="twitter:description" content="Link
+
+🔗 Github
+🔗 Looker Studio
+
+Latar Belakang
+Di era digital, data menjadi aset tak ternilai bagi perusahaan untuk mengambil keputusan strategis.
+Di industri penerbangan, analisis data tidak hanya membantu meningkatkan pengalaman pelanggan, tetapi
+juga menjadi kunci untuk mengoptimalkan biaya operasional dan memaksimalkan profitabilitas.
+Exploratory Data Analysis (EDA)
+Eksplorasi pada kolom numerik
+
+Distribusi Data
+
+
+Beberapa fitur memiliki distribusi yang tidak normal (skewed), terutama COST_RATIO dan PROFIT, yang cenderung condong ke kanan (positively skewed).
+COLLY dan WEIGHT juga menunjukkan adanya beberapa nilai ekstrem yang mungkin perlu diteliti lebih lanjut (mungkin outlier).
+
+
+Korelasi Antara Variabel
+
+
+TOTAL_COST berkorelasi sangat tinggi dengan COST_A, COST_B, dan COST_C, yang berarti biaya total sangat dipengaruhi oleh biaya individu ini. Hal ini masuk akal karena TOTAL_COST merupakan jumlah dari biaya-biaya tersebut.
+PRICE berkorelasi positif dengan REVENUE dan PROFIT, menunjukkan bahwa semakin tinggi harga tiket, semakin besar potensi pendapatan dan keuntungan maskapai.
+MARGIN berkorelasi negatif dengan COST_RATIO, artinya semakin tinggi rasio biaya terhadap pendapatan, semakin kecil margin keuntungan maskapai. Ini bisa menjadi faktor penting dalam strategi pricing maskapai.
+
+
+Potensi Perbaikan Model &amp; Bisnis
+
+
+Analisis Profitabilitas: Maskapai bisa fokus pada harga tiket yang optimal untuk memaksimalkan profit sambil mempertahankan volume penumpang.
+Efisiensi Biaya: Mengurangi COST_RATIO bisa membantu meningkatkan margin keuntungan, misalnya dengan mengoptimalkan operasional pesawat atau mengurangi biaya bahan bakar.
+Outlier Handling: Jika ada nilai ekstrem pada kolom seperti WEIGHT atau PROFIT, sebaiknya dilakukan analisis lebih lanjut apakah ini kesalahan data atau memang kejadian yang jarang terjadi.
+
+Eksplorasi pada kolom kategorikal
+
+Dominasi Maskapai &amp; Rute Populer
+
+
+Citilink dan Lion Air mendominasi dalam jumlah penerbangan, menunjukkan mereka sebagai pilihan utama.
+Makassar dan Banjarmasin adalah tujuan paling sering dikunjungi, kemungkinan besar karena tingginya mobilitas bisnis atau kebutuhan logistik.
+
+
+Distribusi Layanan
+
+
+Door to Door (DTD) jauh lebih populer dibandingkan Port to Port (PTP).
+Hal ini bisa menunjukkan bahwa pelanggan lebih memilih layanan yang lebih lengkap daripada sekadar pengiriman antar bandara.
+
+
+Keberangkatan dari Kota Besar
+
+
+Jakarta dan Surabaya menjadi pusat keberangkatan utama, yang wajar karena merupakan pusat ekonomi Indonesia.
+">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Projects",
+      "item": "http://localhost:1313/alfianri/projects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Analisis Data: Optimalkan Biaya \u0026 Tingkatkan Profit di Industri Logistik",
+      "item": "http://localhost:1313/alfianri/projects/analisis_penjualan/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Analisis Data: Optimalkan Biaya \u0026 Tingkatkan Profit di Industri Logistik",
+  "name": "Analisis Data: Optimalkan Biaya \u0026 Tingkatkan Profit di Industri Logistik",
+  "description": "Link 🔗 Github 🔗 Looker Studio Latar Belakang Di era digital, data menjadi aset tak ternilai bagi perusahaan untuk mengambil keputusan strategis. Di industri penerbangan, analisis data tidak hanya membantu meningkatkan pengalaman pelanggan, tetapi juga menjadi kunci untuk mengoptimalkan biaya operasional dan memaksimalkan profitabilitas.\nExploratory Data Analysis (EDA) Eksplorasi pada kolom numerik Distribusi Data Beberapa fitur memiliki distribusi yang tidak normal (skewed), terutama COST_RATIO dan PROFIT, yang cenderung condong ke kanan (positively skewed). COLLY dan WEIGHT juga menunjukkan adanya beberapa nilai ekstrem yang mungkin perlu diteliti lebih lanjut (mungkin outlier). Korelasi Antara Variabel TOTAL_COST berkorelasi sangat tinggi dengan COST_A, COST_B, dan COST_C, yang berarti biaya total sangat dipengaruhi oleh biaya individu ini. Hal ini masuk akal karena TOTAL_COST merupakan jumlah dari biaya-biaya tersebut. PRICE berkorelasi positif dengan REVENUE dan PROFIT, menunjukkan bahwa semakin tinggi harga tiket, semakin besar potensi pendapatan dan keuntungan maskapai. MARGIN berkorelasi negatif dengan COST_RATIO, artinya semakin tinggi rasio biaya terhadap pendapatan, semakin kecil margin keuntungan maskapai. Ini bisa menjadi faktor penting dalam strategi pricing maskapai. Potensi Perbaikan Model \u0026amp; Bisnis Analisis Profitabilitas: Maskapai bisa fokus pada harga tiket yang optimal untuk memaksimalkan profit sambil mempertahankan volume penumpang. Efisiensi Biaya: Mengurangi COST_RATIO bisa membantu meningkatkan margin keuntungan, misalnya dengan mengoptimalkan operasional pesawat atau mengurangi biaya bahan bakar. Outlier Handling: Jika ada nilai ekstrem pada kolom seperti WEIGHT atau PROFIT, sebaiknya dilakukan analisis lebih lanjut apakah ini kesalahan data atau memang kejadian yang jarang terjadi. Eksplorasi pada kolom kategorikal Dominasi Maskapai \u0026amp; Rute Populer Citilink dan Lion Air mendominasi dalam jumlah penerbangan, menunjukkan mereka sebagai pilihan utama. Makassar dan Banjarmasin adalah tujuan paling sering dikunjungi, kemungkinan besar karena tingginya mobilitas bisnis atau kebutuhan logistik. Distribusi Layanan Door to Door (DTD) jauh lebih populer dibandingkan Port to Port (PTP). Hal ini bisa menunjukkan bahwa pelanggan lebih memilih layanan yang lebih lengkap daripada sekadar pengiriman antar bandara. Keberangkatan dari Kota Besar Jakarta dan Surabaya menjadi pusat keberangkatan utama, yang wajar karena merupakan pusat ekonomi Indonesia. ",
+  "keywords": [
+    "Pyhton", "Machine Learning", "Jupyter Notebook"
+  ],
+  "articleBody": "Link 🔗 Github 🔗 Looker Studio Latar Belakang Di era digital, data menjadi aset tak ternilai bagi perusahaan untuk mengambil keputusan strategis. Di industri penerbangan, analisis data tidak hanya membantu meningkatkan pengalaman pelanggan, tetapi juga menjadi kunci untuk mengoptimalkan biaya operasional dan memaksimalkan profitabilitas.\nExploratory Data Analysis (EDA) Eksplorasi pada kolom numerik Distribusi Data Beberapa fitur memiliki distribusi yang tidak normal (skewed), terutama COST_RATIO dan PROFIT, yang cenderung condong ke kanan (positively skewed). COLLY dan WEIGHT juga menunjukkan adanya beberapa nilai ekstrem yang mungkin perlu diteliti lebih lanjut (mungkin outlier). Korelasi Antara Variabel TOTAL_COST berkorelasi sangat tinggi dengan COST_A, COST_B, dan COST_C, yang berarti biaya total sangat dipengaruhi oleh biaya individu ini. Hal ini masuk akal karena TOTAL_COST merupakan jumlah dari biaya-biaya tersebut. PRICE berkorelasi positif dengan REVENUE dan PROFIT, menunjukkan bahwa semakin tinggi harga tiket, semakin besar potensi pendapatan dan keuntungan maskapai. MARGIN berkorelasi negatif dengan COST_RATIO, artinya semakin tinggi rasio biaya terhadap pendapatan, semakin kecil margin keuntungan maskapai. Ini bisa menjadi faktor penting dalam strategi pricing maskapai. Potensi Perbaikan Model \u0026 Bisnis Analisis Profitabilitas: Maskapai bisa fokus pada harga tiket yang optimal untuk memaksimalkan profit sambil mempertahankan volume penumpang. Efisiensi Biaya: Mengurangi COST_RATIO bisa membantu meningkatkan margin keuntungan, misalnya dengan mengoptimalkan operasional pesawat atau mengurangi biaya bahan bakar. Outlier Handling: Jika ada nilai ekstrem pada kolom seperti WEIGHT atau PROFIT, sebaiknya dilakukan analisis lebih lanjut apakah ini kesalahan data atau memang kejadian yang jarang terjadi. Eksplorasi pada kolom kategorikal Dominasi Maskapai \u0026 Rute Populer Citilink dan Lion Air mendominasi dalam jumlah penerbangan, menunjukkan mereka sebagai pilihan utama. Makassar dan Banjarmasin adalah tujuan paling sering dikunjungi, kemungkinan besar karena tingginya mobilitas bisnis atau kebutuhan logistik. Distribusi Layanan Door to Door (DTD) jauh lebih populer dibandingkan Port to Port (PTP). Hal ini bisa menunjukkan bahwa pelanggan lebih memilih layanan yang lebih lengkap daripada sekadar pengiriman antar bandara. Keberangkatan dari Kota Besar Jakarta dan Surabaya menjadi pusat keberangkatan utama, yang wajar karena merupakan pusat ekonomi Indonesia. ",
+  "wordCount" : "325",
+  "inLanguage": "en",
+  "image":"http://localhost:1313/alfianri/projects/analisis_penjualan/dashboard.png","datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/alfianri/projects/analisis_penjualan/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alfianri Manihuruk",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/alfianri/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header sticky-header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/alfianri/" accesskey="h" title="Alfianri Manihuruk (Alt + H)">Alfianri Manihuruk</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/alfianri/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/alfianri/about" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/alfianri/projects" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/alfianri/volunteer" title="Volunteer">
+                    <span>Volunteer</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/alfianri/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/alfianri/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/alfianri/projects/">Projects</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Analisis Data: Optimalkan Biaya &amp; Tingkatkan Profit di Industri Logistik
+    </h1>
+    <div class="post-meta">
+
+
+Des 2024
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="eager" src="http://localhost:1313/alfianri/projects/analisis_penjualan/dashboard.png" alt="">
+        
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">‎ Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#link" aria-label="Link">Link</a></li>
+                <li>
+                    <a href="#latar-belakang" aria-label="Latar Belakang">Latar Belakang</a></li>
+                <li>
+                    <a href="#exploratory-data-analysis-eda" aria-label="Exploratory Data Analysis (EDA)">Exploratory Data Analysis (EDA)</a><ul>
+                        
+                <li>
+                    <a href="#eksplorasi-pada-kolom-numerik" aria-label="Eksplorasi pada kolom numerik">Eksplorasi pada kolom numerik</a></li>
+                <li>
+                    <a href="#eksplorasi-pada-kolom-kategorikal" aria-label="Eksplorasi pada kolom kategorikal">Eksplorasi pada kolom kategorikal</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h3 id="link">Link<a hidden class="anchor" aria-hidden="true" href="#link">#</a></h3>
+<ul>
+<li>🔗 <a href="https://github.com/Alfianri-Manihuruk/Analisis-Data-Karyawan/blob/main/analisis_karyawan.ipynb">Github</a></li>
+<li>🔗 <a href="https://lookerstudio.google.com/reporting/462415dd-194d-411c-9a1e-a3d378a9892d">Looker Studio</a></li>
+</ul>
+<h3 id="latar-belakang">Latar Belakang<a hidden class="anchor" aria-hidden="true" href="#latar-belakang">#</a></h3>
+<p>Di era digital, data menjadi aset tak ternilai bagi perusahaan untuk mengambil keputusan strategis.
+Di industri penerbangan, analisis data tidak hanya membantu meningkatkan pengalaman pelanggan, tetapi
+juga menjadi kunci untuk mengoptimalkan biaya operasional dan memaksimalkan profitabilitas.</p>
+<h3 id="exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)<a hidden class="anchor" aria-hidden="true" href="#exploratory-data-analysis-eda">#</a></h3>
+<h4 id="eksplorasi-pada-kolom-numerik">Eksplorasi pada kolom numerik<a hidden class="anchor" aria-hidden="true" href="#eksplorasi-pada-kolom-numerik">#</a></h4>
+<ol>
+<li>Distribusi Data</li>
+</ol>
+<ul>
+<li>Beberapa fitur memiliki distribusi yang tidak normal (skewed), terutama COST_RATIO dan PROFIT, yang cenderung condong ke kanan (positively skewed).</li>
+<li>COLLY dan WEIGHT juga menunjukkan adanya beberapa nilai ekstrem yang mungkin perlu diteliti lebih lanjut (mungkin outlier).</li>
+</ul>
+<ol start="2">
+<li>Korelasi Antara Variabel</li>
+</ol>
+<ul>
+<li>TOTAL_COST berkorelasi sangat tinggi dengan COST_A, COST_B, dan COST_C, yang berarti biaya total sangat dipengaruhi oleh biaya individu ini. Hal ini masuk akal karena TOTAL_COST merupakan jumlah dari biaya-biaya tersebut.</li>
+<li>PRICE berkorelasi positif dengan REVENUE dan PROFIT, menunjukkan bahwa semakin tinggi harga tiket, semakin besar potensi pendapatan dan keuntungan maskapai.</li>
+<li>MARGIN berkorelasi negatif dengan COST_RATIO, artinya semakin tinggi rasio biaya terhadap pendapatan, semakin kecil margin keuntungan maskapai. Ini bisa menjadi faktor penting dalam strategi pricing maskapai.</li>
+</ul>
+<ol start="3">
+<li>Potensi Perbaikan Model &amp; Bisnis</li>
+</ol>
+<ul>
+<li>Analisis Profitabilitas: Maskapai bisa fokus pada harga tiket yang optimal untuk memaksimalkan profit sambil mempertahankan volume penumpang.</li>
+<li>Efisiensi Biaya: Mengurangi COST_RATIO bisa membantu meningkatkan margin keuntungan, misalnya dengan mengoptimalkan operasional pesawat atau mengurangi biaya bahan bakar.</li>
+<li>Outlier Handling: Jika ada nilai ekstrem pada kolom seperti WEIGHT atau PROFIT, sebaiknya dilakukan analisis lebih lanjut apakah ini kesalahan data atau memang kejadian yang jarang terjadi.</li>
+</ul>
+<h4 id="eksplorasi-pada-kolom-kategorikal">Eksplorasi pada kolom kategorikal<a hidden class="anchor" aria-hidden="true" href="#eksplorasi-pada-kolom-kategorikal">#</a></h4>
+<ol>
+<li>Dominasi Maskapai &amp; Rute Populer</li>
+</ol>
+<ul>
+<li>Citilink dan Lion Air mendominasi dalam jumlah penerbangan, menunjukkan mereka sebagai pilihan utama.</li>
+<li>Makassar dan Banjarmasin adalah tujuan paling sering dikunjungi, kemungkinan besar karena tingginya mobilitas bisnis atau kebutuhan logistik.</li>
+</ul>
+<ol start="2">
+<li>Distribusi Layanan</li>
+</ol>
+<ul>
+<li>Door to Door (DTD) jauh lebih populer dibandingkan Port to Port (PTP).</li>
+<li>Hal ini bisa menunjukkan bahwa pelanggan lebih memilih layanan yang lebih lengkap daripada sekadar pengiriman antar bandara.</li>
+</ul>
+<ol start="3">
+<li>Keberangkatan dari Kota Besar</li>
+</ol>
+<ul>
+<li>Jakarta dan Surabaya menjadi pusat keberangkatan utama, yang wajar karena merupakan pusat ekonomi Indonesia.</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/alfianri/tags/pyhton/">Pyhton</a></li>
+      <li><a href="http://localhost:1313/alfianri/tags/machine-learning/">Machine Learning</a></li>
+      <li><a href="http://localhost:1313/alfianri/tags/jupyter-notebook/">Jupyter Notebook</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="http://localhost:1313/alfianri/">Alfianri Manihuruk</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -4,6 +4,8 @@
   <url>
     <loc>http://localhost:1313/alfianri/about/about_me/</loc>
   </url><url>
+    <loc>http://localhost:1313/alfianri/projects/analisis_penjualan/</loc>
+  </url><url>
     <loc>http://localhost:1313/alfianri/projects/deteksi_kantuk/</loc>
   </url><url>
     <loc>http://localhost:1313/alfianri/projects/analisis_karyawan/</loc>
@@ -65,6 +67,8 @@
     <loc>http://localhost:1313/alfianri/tags/jupyter-notebook/</loc>
   </url><url>
     <loc>http://localhost:1313/alfianri/tags/leaderships/</loc>
+  </url><url>
+    <loc>http://localhost:1313/alfianri/tags/machine-learning/</loc>
   </url><url>
     <loc>http://localhost:1313/alfianri/tags/nodejs----servis/</loc>
   </url><url>

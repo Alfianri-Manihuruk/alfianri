@@ -17,6 +17,67 @@
 &lt;p&gt;With expertise in Python, SQL, data visualization, and cutting-edge technologies such as cloud computing and big data processing, I continuously enhance my skills through personal projects and by staying updated on the latest tech trends. My goal is to contribute to data-driven strategic decision-making in innovative companies.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Analisis Data: Optimalkan Biaya &amp; Tingkatkan Profit di Industri Logistik</title>
+      <link>http://localhost:1313/alfianri/projects/analisis_penjualan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/alfianri/projects/analisis_penjualan/</guid>
+      <description>&lt;h3 id=&#34;link&#34;&gt;Link&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🔗 &lt;a href=&#34;https://github.com/Alfianri-Manihuruk/Analisis-Data-Karyawan/blob/main/analisis_karyawan.ipynb&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🔗 &lt;a href=&#34;https://lookerstudio.google.com/reporting/462415dd-194d-411c-9a1e-a3d378a9892d&#34;&gt;Looker Studio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;latar-belakang&#34;&gt;Latar Belakang&lt;/h3&gt;
+&lt;p&gt;Di era digital, data menjadi aset tak ternilai bagi perusahaan untuk mengambil keputusan strategis.
+Di industri penerbangan, analisis data tidak hanya membantu meningkatkan pengalaman pelanggan, tetapi
+juga menjadi kunci untuk mengoptimalkan biaya operasional dan memaksimalkan profitabilitas.&lt;/p&gt;
+&lt;h3 id=&#34;exploratory-data-analysis-eda&#34;&gt;Exploratory Data Analysis (EDA)&lt;/h3&gt;
+&lt;h4 id=&#34;eksplorasi-pada-kolom-numerik&#34;&gt;Eksplorasi pada kolom numerik&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Distribusi Data&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Beberapa fitur memiliki distribusi yang tidak normal (skewed), terutama COST_RATIO dan PROFIT, yang cenderung condong ke kanan (positively skewed).&lt;/li&gt;
+&lt;li&gt;COLLY dan WEIGHT juga menunjukkan adanya beberapa nilai ekstrem yang mungkin perlu diteliti lebih lanjut (mungkin outlier).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Korelasi Antara Variabel&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;TOTAL_COST berkorelasi sangat tinggi dengan COST_A, COST_B, dan COST_C, yang berarti biaya total sangat dipengaruhi oleh biaya individu ini. Hal ini masuk akal karena TOTAL_COST merupakan jumlah dari biaya-biaya tersebut.&lt;/li&gt;
+&lt;li&gt;PRICE berkorelasi positif dengan REVENUE dan PROFIT, menunjukkan bahwa semakin tinggi harga tiket, semakin besar potensi pendapatan dan keuntungan maskapai.&lt;/li&gt;
+&lt;li&gt;MARGIN berkorelasi negatif dengan COST_RATIO, artinya semakin tinggi rasio biaya terhadap pendapatan, semakin kecil margin keuntungan maskapai. Ini bisa menjadi faktor penting dalam strategi pricing maskapai.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Potensi Perbaikan Model &amp;amp; Bisnis&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Analisis Profitabilitas: Maskapai bisa fokus pada harga tiket yang optimal untuk memaksimalkan profit sambil mempertahankan volume penumpang.&lt;/li&gt;
+&lt;li&gt;Efisiensi Biaya: Mengurangi COST_RATIO bisa membantu meningkatkan margin keuntungan, misalnya dengan mengoptimalkan operasional pesawat atau mengurangi biaya bahan bakar.&lt;/li&gt;
+&lt;li&gt;Outlier Handling: Jika ada nilai ekstrem pada kolom seperti WEIGHT atau PROFIT, sebaiknya dilakukan analisis lebih lanjut apakah ini kesalahan data atau memang kejadian yang jarang terjadi.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;eksplorasi-pada-kolom-kategorikal&#34;&gt;Eksplorasi pada kolom kategorikal&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Dominasi Maskapai &amp;amp; Rute Populer&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Citilink dan Lion Air mendominasi dalam jumlah penerbangan, menunjukkan mereka sebagai pilihan utama.&lt;/li&gt;
+&lt;li&gt;Makassar dan Banjarmasin adalah tujuan paling sering dikunjungi, kemungkinan besar karena tingginya mobilitas bisnis atau kebutuhan logistik.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Distribusi Layanan&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Door to Door (DTD) jauh lebih populer dibandingkan Port to Port (PTP).&lt;/li&gt;
+&lt;li&gt;Hal ini bisa menunjukkan bahwa pelanggan lebih memilih layanan yang lebih lengkap daripada sekadar pengiriman antar bandara.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Keberangkatan dari Kota Besar&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Jakarta dan Surabaya menjadi pusat keberangkatan utama, yang wajar karena merupakan pusat ekonomi Indonesia.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
       <title>Driver Drowsiness Detection Using Convolution Neural Networks(CNN)</title>
       <link>http://localhost:1313/alfianri/projects/deteksi_kantuk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Jupyter Notebook on Alfianri Manihuruk</title>
-    <link>http://localhost:1313/alfianri/tags/jupyter-notebook/</link>
-    <description>Recent content in Jupyter Notebook on Alfianri Manihuruk</description>
+    <title>Machine Learning on Alfianri Manihuruk</title>
+    <link>http://localhost:1313/alfianri/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on Alfianri Manihuruk</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/alfianri/tags/jupyter-notebook/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/alfianri/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analisis Data: Optimalkan Biaya &amp; Tingkatkan Profit di Industri Logistik</title>
       <link>http://localhost:1313/alfianri/projects/analisis_penjualan/</link>
@@ -67,31 +67,6 @@ juga menjadi kunci untuk mengoptimalkan biaya operasional dan memaksimalkan prof
 &lt;ul&gt;
 &lt;li&gt;Jakarta dan Surabaya menjadi pusat keberangkatan utama, yang wajar karena merupakan pusat ekonomi Indonesia.&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Analisis Data Karyawan: Demografi, Metrik Pekerjaan, dan Indikator Keluar Kerja</title>
-      <link>http://localhost:1313/alfianri/projects/analisis_karyawan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/alfianri/projects/analisis_karyawan/</guid>
-      <description>&lt;h3 id=&#34;link&#34;&gt;Link&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;🔗 &lt;a href=&#34;https://github.com/Alfianri-Manihuruk/Analisis-Data-Karyawan/blob/main/analisis_karyawan.ipynb&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;latar-belakang&#34;&gt;Latar Belakang&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;Analisis ini bertujuan untuk mengeksplorasi dataset karyawan yang mencakup atribut demografis, metrik terkait pekerjaan, dan status attrition. Fokus utamanya adalah melakukan Exploratory Data Analysis (EDA) untuk memahami karakteristik data, mengidentifikasi pola, serta menemukan insight yang relevan.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;langkah-langkah-analisis&#34;&gt;Langkah-Langkah Analisis&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Import Data dan Library&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dataset diambil dari Google Drive menggunakan Pandas.&lt;/li&gt;
-&lt;li&gt;Library yang digunakan: NumPy, Pandas, Matplotlib, dan Seaborn untuk    visualisasi.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Pembersihan Data&lt;/p&gt;
-&lt;p&gt;Kolom yang tidak relevan dihapus: EmployeeNumber, Over18, dan StandardHours.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
