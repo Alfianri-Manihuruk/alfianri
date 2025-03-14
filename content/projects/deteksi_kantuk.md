@@ -7,7 +7,7 @@ tags: ["DeepLearning", "AI", "Python", "TensorFlow"]
 showToc: false
 weight: 202
 cover:
-    image: "projects/deteksi_kantuk/hasil_prediksi.png"
+    image: "projects/deteksi_kantuk/hasil_pred.png"
 --- 
 
 ### Link
