@@ -76,10 +76,10 @@ juga menjadi kunci untuk mengoptimalkan biaya operasional dan memaksimalkan prof
       <description>&lt;h3 id=&#34;link&#34;&gt;Link&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;🔗 &lt;a href=&#34;https://github.com/Alfianri-Manihuruk/Analisis-Data-Karyawan/blob/main/analisis_karyawan.ipynb&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🔗 &lt;a href=&#34;https://app.powerbi.com/groups/me/reports/7f3d2152-d147-402b-8c1b-40a9bf102c23?ctid=82119505-7f56-4e1d-859a-bbeac83a78a0&amp;amp;pbi_source=linkShare&#34;&gt;Power BI&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;latar-belakang&#34;&gt;Latar Belakang&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;Analisis ini bertujuan untuk mengeksplorasi dataset karyawan yang mencakup atribut demografis, metrik terkait pekerjaan, dan status attrition. Fokus utamanya adalah melakukan Exploratory Data Analysis (EDA) untuk memahami karakteristik data, mengidentifikasi pola, serta menemukan insight yang relevan.
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Analisis ini bertujuan untuk mengeksplorasi dataset karyawan yang mencakup atribut demografis, metrik terkait pekerjaan, dan status attrition. Fokus utamanya adalah melakukan Exploratory Data Analysis (EDA) untuk memahami karakteristik data, mengidentifikasi pola, serta menemukan insight yang relevan.&lt;/p&gt;
 &lt;h3 id=&#34;langkah-langkah-analisis&#34;&gt;Langkah-Langkah Analisis&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
