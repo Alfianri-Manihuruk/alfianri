@@ -6,15 +6,17 @@ tags: ["Pyhton", "Jupyter Notebook"]
 showToc: true
 weight: 203
 cover:
-    image: "projects/analisis_karyawan/data_karyawan.png"
+    image: "projects/analisis_karyawan/data_karyawan.jpg"
 --- 
 
 ### Link 
 - 🔗 [Github](https://github.com/Alfianri-Manihuruk/Analisis-Data-Karyawan/blob/main/analisis_karyawan.ipynb)
+- 🔗 [Power BI](https://app.powerbi.com/groups/me/reports/7f3d2152-d147-402b-8c1b-40a9bf102c23?ctid=82119505-7f56-4e1d-859a-bbeac83a78a0&pbi_source=linkShare)
 
 
 ### Latar Belakang
-    Analisis ini bertujuan untuk mengeksplorasi dataset karyawan yang mencakup atribut demografis, metrik terkait pekerjaan, dan status attrition. Fokus utamanya adalah melakukan Exploratory Data Analysis (EDA) untuk memahami karakteristik data, mengidentifikasi pola, serta menemukan insight yang relevan.
+
+Analisis ini bertujuan untuk mengeksplorasi dataset karyawan yang mencakup atribut demografis, metrik terkait pekerjaan, dan status attrition. Fokus utamanya adalah melakukan Exploratory Data Analysis (EDA) untuk memahami karakteristik data, mengidentifikasi pola, serta menemukan insight yang relevan.
 
 ### Langkah-Langkah Analisis
 
