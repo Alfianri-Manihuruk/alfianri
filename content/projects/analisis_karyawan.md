@@ -2,7 +2,7 @@
 title: "Analisis Data Karyawan: Demografi, Metrik Pekerjaan, dan Indikator Keluar Kerja"
 dateString: Des 2024
 draft: false
-tags: ["Pyhton", "Jupyter Notebook"]
+tags: ["Pyhton", "Jupyter Notebook", "Power BI"]
 showToc: true
 weight: 203
 cover:

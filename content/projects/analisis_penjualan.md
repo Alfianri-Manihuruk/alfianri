@@ -2,7 +2,7 @@
 title: "Analisis Data: Optimalkan Biaya & Tingkatkan Profit di Industri Logistik"
 dateString: Des 2024
 draft: false
-tags: ["Pyhton", "Machine Learning", "Jupyter Notebook"]
+tags: ["Pyhton", "Machine Learning", "Jupyter Notebook", "Looker Studio"]
 showToc: true
 weight: 200
 cover:

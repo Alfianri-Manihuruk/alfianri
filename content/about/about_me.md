@@ -10,7 +10,7 @@ cover:
 
 
 # Intro
-I am a passionate professional in the field of Data Science, focusing on roles such as Data Scientist, Data Analyst and AI/ML Engineer. Currently, I am deepening my knowledge in machine learning, artificial intelligence, and business analysis to create data-driven solutions. 
+I am a passionate professional in the field of Data Science, focusing on roles such as Data Scientist, Data Engineer, Data Analyst and AI/ML Engineer. Currently, I am deepening my knowledge in machine learning, artificial intelligence, and business analysis to create data-driven solutions. 
 
 With expertise in Python, SQL, data visualization, and cutting-edge technologies such as cloud computing and big data processing, I continuously enhance my skills through personal projects and by staying updated on the latest tech trends. My goal is to contribute to data-driven strategic decision-making in innovative companies.
 
@@ -27,6 +27,7 @@ For ease and accuracy of information, my entire professional experience is avail
 - Power BI/Google Data Studio
 - Google Cloud
 - Excel
+- Google BigQuery
 # Programming Languages
 - Python
 - R
@@ -42,5 +43,6 @@ For ease and accuracy of information, my entire professional experience is avail
 - Seaborn
 - Hadoop
 - Spark
+- Apache Airflow
 
 
